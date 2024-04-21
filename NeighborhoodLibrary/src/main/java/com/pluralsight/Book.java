@@ -3,12 +3,12 @@ package com.pluralsight;
 public class Book
 {
     private int id;
-    private String isbn;
+    private int isbn;
     private String title;
     private boolean isCheckedOut;
     private String checkedOutTo;
 
-    public Book(int id, String isbn, String title, boolean isCheckedOut, String checkedOutTo)
+    public Book(int id, int isbn, String title, boolean isCheckedOut, String checkedOutTo)
     {
         this.id = id;
         this.isbn = isbn;
@@ -21,9 +21,9 @@ public class Book
 
     public void setId(int id) { this.id = id; }
 
-    public String getIsbn () { return isbn; }
+    public int getIsbn () { return isbn; }
 
-    public void setIsbn(String isbn) { this.isbn = isbn; }
+    public void setIsbn(int isbn) { this.isbn = isbn; }
 
     public String getTitle () { return title; }
 
@@ -35,6 +35,5 @@ public class Book
 
     public String getCheckedOutTo () { return checkedOutTo; }
 
-    public void setCheckedOut(String checkedOutTo) { this.checkedOutTo = checkedOutTo; }
-
+    public void setCheckedOutTo(String checkedOutTo) { this.checkedOutTo = checkedOutTo; }
 }
