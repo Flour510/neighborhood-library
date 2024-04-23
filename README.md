@@ -4,12 +4,12 @@ In this repository you will find the code written in the Java language, that bui
 
 The Library is a free service to anyone in the neighborhood, and is based on the honor system. Anyone can check out a book, they just enter their name and the application will track who checked it out. - Workbook2
 
-## Screens:
+## Screens
 When you run the code, the terminal displays a greeting to the user, followed by a display of the Home screen and the different screen options you can navigate into. The user can input a number from 1 - 4 to make a selection to go into a next page as shown below:
 
 <img width="764" alt="Screenshot 2024-04-22 at 4 23 37 PM" src="https://github.com/Flour510/neighborhood-library/assets/99916123/c7176c0b-827e-410a-90a0-75b8e65cfd34">
 
-## Available Books Screen:
+## Available Books Screen
 If the user inputs selection 1 and presses enter, they will be prompted into that screen and a list of all Available Books will be displayed to the user. The infromation regarding the books will be displayed in this order:
 * bookId
 * bookIsbn
@@ -29,7 +29,7 @@ In the case that the user enters input that are invalid characters, the applicat
 This invalid input by the user prompts a message informing the user of their invalid entry. Followed by the refreshed Home screen to get another input from the user to move on to the next command.
 
 ## Interesting Piece of the Code
-One part of this code I found interesting to build is option 2 & 3. Getting these to work and display the screen I wanted it to display was a challenging for me. 
+One part of this code I found interesting to build is option 2 & 3. Getting these to work and display the screen I wanted it to display was challenging for me. 
 
 In the screenshot below, the if() statement checks two conditions. 
 * selectedBook != null
