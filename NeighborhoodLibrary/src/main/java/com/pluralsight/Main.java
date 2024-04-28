@@ -36,7 +36,7 @@ public class Main {
         };
 
         int choice = 0;
-        while(choice != 20) // increments between choice until reaches 20 increments
+        while(choice != 4)
         {
             // print the home screen
             System.out.println();
@@ -49,7 +49,7 @@ public class Main {
             System.out.println("1 - Show Available Books");
             System.out.println("2 - Show Checked Out Books");
             System.out.println("3 - Check In a Book");
-            System.out.println("4 - Exit Home Screen");
+            System.out.println("4 - Exit");
             System.out.println();
             System.out.println("Choose an option below: ");
             choice = Integer.parseInt(userInput.nextLine());
@@ -71,7 +71,8 @@ public class Main {
                 case 4:
                     System.out.println();
                     System.out.println("Goodbye! Come again :) ");
-                    break;
+                    return; // is this all I had to do to fix this?
+
                 default:
                     System.out.println();
                     System.out.println("Bruh... Invalid selection");
@@ -216,5 +217,6 @@ public class Main {
         System.out.println("Book with specified ID not found. ");
 
     }
+
 
 }
